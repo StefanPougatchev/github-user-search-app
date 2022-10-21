@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Theme from './theme/theme';
 import HeaderBar from './components/HeaderBar';
 import SearchBar from './components/SearchBar';
+import UserProfileSection from './components/UserProfileSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AppContainer>
         <HeaderBar />
         <SearchBar />
+        <UserProfileSection />
       </AppContainer>
     </Theme>
   );
