@@ -3,7 +3,14 @@ import styled from 'styled-components';
 import IconSearch from '../assets/icon-search.svg';
 
 const SearchBar = (props) => {
-  const { userName, handleInputChange, handleClick, loading, error } = props;
+  const { userName, handleInputChange, handleEvent, loading, error } = props;
+
+  const handleKeyDown = (e) => {
+    const key = e.key;
+    if (key === 'Enter') {
+      handleEvent();
+    }
+  };
   return (
     <SearchBarContainer>
       <SearchInputContainer>
@@ -17,11 +24,12 @@ const SearchBar = (props) => {
           placeholder='Search GitHub username...'
           onChange={(e) => handleInputChange(e)}
           value={userName}
+          onKeyDown={(e) => handleKeyDown(e)}
         />
       </SearchInputContainer>
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <LoadingMessage>Loading..</LoadingMessage>}
-      <SearchButton onClick={() => handleClick()}>Search</SearchButton>
+      <SearchButton onClick={() => handleEvent()}>Search</SearchButton>
     </SearchBarContainer>
   );
 };

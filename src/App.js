@@ -40,7 +40,7 @@ function App() {
     setUserName(value.toLowerCase());
   };
 
-  const handleClick = () => {
+  const handleEvent = () => {
     getUserDate(userName);
   };
 
@@ -51,7 +51,7 @@ function App() {
         <SearchBar
           handleInputChange={handleInputChange}
           userName={userName}
-          handleClick={handleClick}
+          handleEvent={handleEvent}
           loading={loading}
           error={error}
         />
