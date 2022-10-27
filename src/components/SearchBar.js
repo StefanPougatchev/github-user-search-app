@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import IconSearch from '../assets/icon-search.svg';
 
-const SearchBar = () => {
-  const [userName, setUserName] = useState('');
-
+const SearchBar = (props) => {
+  const { userName, handleInputChange, handleClick, loading, error } = props;
   return (
     <SearchBarContainer>
       <SearchInputContainer>
@@ -16,11 +15,13 @@ const SearchBar = () => {
         />
         <SearchInput
           placeholder='Search GitHub username...'
-          onChange={(e) => setUserName(e.target.value)}
+          onChange={(e) => handleInputChange(e)}
           value={userName}
         />
       </SearchInputContainer>
-      <SearchButton>Search</SearchButton>
+      {error && <ErrorMessage>{error}</ErrorMessage>}
+      {loading && <LoadingMessage>Loading..</LoadingMessage>}
+      <SearchButton onClick={() => handleClick()}>Search</SearchButton>
     </SearchBarContainer>
   );
 };
@@ -72,9 +73,32 @@ const SearchInput = styled.input`
   font-size: 18px;
   line-height: 25px;
   color: #222731;
-  margin-left: 23px;
+  margin-left: 24px;
   border: none;
   width: 100%;
+  padding: 0px;
+`;
+
+const ErrorMessage = styled.p`
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #f74646;
+  margin-right: 24px;
+  white-space: nowrap;
+`;
+
+const LoadingMessage = styled.p`
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #0079ff;
+  margin-right: 24px;
+  white-space: nowrap;
 `;
 
 export default SearchBar;
