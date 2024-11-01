@@ -6,7 +6,7 @@ import { Octokit } from 'octokit';
 import PropTypes from 'prop-types';
 
 const octokit = new Octokit({
-	auth: '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',
+	auth: 'sample',
 });
 
 const SearchBar = (props) => {
