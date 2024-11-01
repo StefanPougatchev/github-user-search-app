@@ -38,11 +38,6 @@ Users should be able to:
 
 ![alt text](<Screenshot 2024-11-01 at 8.56.07 AM.png>) ![alt text](<Screenshot 2024-11-01 at 8.56.31 AM.png>) ![alt text](<Screenshot 2024-11-01 at 8.56.36 AM.png>) ![alt text](<Screenshot 2024-11-01 at 8.56.44 AM.png>)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
@@ -51,7 +46,3 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-
-## Author
-
-- Website - [Stefan Pougatchev](https://www.your-site.com)
