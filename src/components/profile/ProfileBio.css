@@ -1,0 +1,15 @@
+.profile-bio {
+	color: var(--primary-text-color);
+	margin-bottom: 23px;
+	font-size: var(--h4-size);
+	line-height: var(--h4-line-height);
+}
+
+/* Tablet view and above */
+@media (min-width: 573px) {
+	.profile-bio {
+		margin-bottom: 32px;
+		font-size: var(--body-size);
+		line-height: var(--body-line-height);
+	}
+}

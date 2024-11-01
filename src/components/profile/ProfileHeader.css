@@ -1,0 +1,72 @@
+.profile-header-container {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 33px;
+}
+
+.profile-header-text-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.profile-header-titles {
+	display: flex;
+	flex-direction: column;
+}
+
+.profileName {
+	color: var(--button-and-username-color);
+	font-size: var(--h4-size);
+	line-height: var(--h4-line-height);
+}
+
+.userName {
+	color: var(--primary-text-color);
+	font-size: var(--h3-size);
+	line-height: var(--h3-line-height);
+}
+
+.profile-img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+.joined-date {
+	font-size: var(--h3-size);
+	line-height: var(--h3-line-height);
+	color: var(--primary-text-color);
+	margin-top: 8px;
+}
+
+/* Tablet view */
+@media (min-width: 573px) {
+	.profileName {
+		font-size: var(--h3-size);
+		line-height: var(--h3-line-height);
+	}
+
+	.userName {
+		font-size: var(--h1-size);
+		line-height: var(--h1-line-height);
+	}
+
+	.profile-img {
+		height: 117px;
+		width: 117px;
+	}
+}
+
+/* Desktop view */
+@media (min-width: 730px) {
+	.profile-header-text-container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.profile-header-container {
+		margin-bottom: 0px;
+	}
+}

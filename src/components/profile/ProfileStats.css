@@ -1,0 +1,39 @@
+.profile-stats-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 18px 15px;
+	width: 100%;
+	border-radius: 10px;
+	height: auto;
+	background-color: var(--primary-background-color);
+	color: var(--primary-text-color);
+	margin-bottom: 24px;
+}
+
+.profile-stat {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.stat-number {
+	font-size: 16px;
+}
+
+.stat-title {
+	font-size: 11px;
+}
+
+/* Tablet view */
+@media (min-width: 573px) {
+	.stat-number {
+		font-size: 23px;
+	}
+
+	.stat-title {
+		font-size: 15px;
+	}
+}

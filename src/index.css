@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+	--primary-background-color: #f6f8ff;
+	--secondary-background-color: #fefefe;
+	--primary-text-color: #2b3442;
+	--secondary-text-color: #4b6a9b;
+	--button-and-username-color: #0079ff;
+	--button-text-color: #ffffff;
+	--h1-size: 26px;
+	--h1-line-height: 38px;
+	--body-size: 15px;
+	--body-line-height: 25px;
+	--h2-size: 22px;
+	--h2-line-height: 33px;
+	--h3-size: 16px;
+	--h3-line-height: 24px;
+	--h4-size: 13px;
+	--h4-line-height: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+[data-theme='dark'] {
+	--primary-background-color: #141d2f;
+	--secondary-background-color: #1e2a47;
+	--primary-text-color: #ffffff;
+	--secondary-text-color: #8892b0;
+	--button-and-username-color: #0079ff;
+}

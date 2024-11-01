@@ -1,0 +1,34 @@
+.profile-body-container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--secondary-background-color);
+	border-radius: 15px;
+	width: 100%;
+	height: auto;
+	padding: 32px 24px 48px 24px;
+}
+
+.profile-main-content-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+
+/* Tablet view */
+@media (min-width: 573px) {
+	.profile-body-container {
+		padding: 40px;
+	}
+}
+
+/* Desktop view */
+@media (min-width: 730px) {
+	.profile-body-container {
+		padding: 48px;
+	}
+	.profile-main-content-container {
+		padding-left: 130px;
+		margin-top: -20px;
+	}
+}
