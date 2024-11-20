@@ -46,3 +46,4 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- Live app - [Check it out](https://stefanpougatchev.github.io/github-user-search-app/)
